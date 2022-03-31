@@ -73,3 +73,26 @@ button {
     padding: 10px 20px;
     border-radius: 3px;
 }
+
+
+/**** О нас ****/
+.about-banner {
+    padding: 60px 0;
+}
+
+.banner-title {
+    color: #34dea5;
+    font-size: 36px;
+    text-align: center;
+}
+
+.banner-promo {
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.section-title {
+    color: #34dea5;
+}
