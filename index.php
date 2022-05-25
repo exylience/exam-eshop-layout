@@ -32,6 +32,11 @@ session_start();
                                 <a class="nav-link" href="register.php">Регистрация</a>
                             <?php
                         } else {
+                            if ($_SESSION['user']['group'] === 2) {
+                                ?>
+                                    <a class="nav-link" href="admin/index.php">Панель администратора</a>
+                                <?php
+                            }
                             ?>
                                 <a class="nav-link logout" href="core/auth/logout.php">Выход</a>
                             <?php

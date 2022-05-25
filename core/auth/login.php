@@ -18,7 +18,7 @@ if ($response) {
             'patronymic' => $user['patronymic'],
             'login' => $user['login'],
             'email' => $user['email'],
-            'group' => $user['group']
+            'group' => (int)$user['group']
         ];
 
         header('Location: /index.php');

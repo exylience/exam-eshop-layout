@@ -41,6 +41,20 @@ section {
     margin: 0 auto;
 }
 
+.section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-link {
+    color: #23252c;
+    background-color: #34dea5;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
 /**** Шапка ****/
 .header {
     padding: 40px 0;
@@ -107,7 +121,6 @@ section {
 
 .section-title {
     color: #34dea5;
-    margin-bottom: 30px;
 }
 
 .slider {
@@ -266,7 +279,6 @@ section {
 }
 
 
-
 .contact-info {
     margin-top: 50px;
     display: flex;
@@ -280,6 +292,21 @@ section {
     text-align: center;
 }
 
+.admin-table th {
+    color: #34dea5;
+}
+
+.admin-table td {
+    color: #fff;
+}
+
+.admin-table th, .admin-table td {
+    padding: 10px;
+}
+
+.admin-table .table-link.delete {
+    color: #d53a2c;
+}
 
 @keyframes leftNext {
     from { left: 100%; }
