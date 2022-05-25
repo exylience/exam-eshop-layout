@@ -32,6 +32,10 @@ button {
     cursor: pointer;
 }
 
+section {
+    padding: 70px;
+}
+
 .container {
     width: 1170px;
     margin: 0 auto;
@@ -256,6 +260,22 @@ button {
     visibility: hidden;
     transition: .3s right;
 }
+
+
+
+.contact-info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
 
 @keyframes leftNext {
     from { left: 100%; }

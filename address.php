@@ -1,7 +1,5 @@
 <?php
 session_start();
-
-
 ?>
 
 <!doctype html>
@@ -18,12 +16,12 @@ session_start();
     <body>
         <header class="header">
             <div class="container">
-                <a class="logo" href="#">NeNetFlix</a>
+                <a class="logo" href="index.php">NeNetFlix</a>
 
                 <nav>
-                    <a class="nav-link active" href="about.php">О нас</a>
+                    <a class="nav-link" href="about.php">О нас</a>
                     <a class="nav-link" href="#">Афиша</a>
-                    <a class="nav-link" href="address.php">Где нас найти?</a>
+                    <a class="nav-link active" href="#">Где нас найти?</a>
 
                     <?php
                         if (!isset($_SESSION['user'])) {
@@ -43,14 +41,20 @@ session_start();
 
         <section class="main">
             <div class="container">
+                <div class="section-top">
+                    <h3 class="section-title">Где нас найти?</h3>
+                </div>
 
+                <div class="map-wrapper">
+                    <img class="map" src="assets/img/map.jpg" alt="#">
+                </div>
+
+                <div class="contact-info">
+                    <p class="contact-address">ул. Пушкина, 43</p>
+                    <p class="contact-phone">8 (800) 555-35-35</p>
+                    <p class="contact-email">test@test.ru</p>
+                </div>
             </div>
         </section>
-
-        <footer class="footer">
-            <div class="container">
-
-            </div>
-        </footer>
     </body>
 </html>

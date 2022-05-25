@@ -17,7 +17,7 @@
                 <nav>
                     <a class="nav-link active" href="#">О нас</a>
                     <a class="nav-link" href="#">Афиша</a>
-                    <a class="nav-link" href="#">Где нас найти?</a>
+                    <a class="nav-link" href="address.php">Где нас найти?</a>
                     <a class="nav-link" href="login.php">Аутентификация</a>
                     <a class="nav-link" href="register.php">Регистрация</a>
                 </nav>
