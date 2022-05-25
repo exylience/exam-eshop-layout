@@ -14,6 +14,7 @@ body {
     position: relative;
     font-family: 'Montserrat', sans-serif;
     background-color: #23252c;
+    overflow-x: hidden;
 }
 
 a {
@@ -24,6 +25,7 @@ input, select, textarea, button {
     font-family: 'Montserrat', sans-serif;
     outline: unset;
     border: 0;
+    background-color: transparent;
 }
 
 button {
@@ -169,6 +171,85 @@ button {
     transition: .5s opacity;
 }
 
+
+.form-main {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-main label {
+    color: #34dea5;
+    font-weight: 500;
+}
+
+.form-input {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #34dea5;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.form-btn {
+    margin-top: 30px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #34dea5;
+    color: #23252c;
+    padding: 10px;
+    transition: .3s background-color;
+}
+
+.form-btn:hover {
+    background-color: #2dbd8f;
+    transition: .3s background-color;
+}
+
+
+.sys-message {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 350px;
+    padding: 45px 15px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transition: .3s right;
+}
+
+.msg-text {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.msg-cls {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.sys-message.error {
+    background-color: #d53a2c;
+}
+
+.sys-message.success {
+    background-color: #34dea5;
+}
+
+.sys-message.hidden {
+    right: -350px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s right;
+}
 
 @keyframes leftNext {
     from { left: 100%; }

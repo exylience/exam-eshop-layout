@@ -5,7 +5,7 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Copy Star | О нас</title>
+        <title>NeNetFlix | О нас</title>
         <link rel="stylesheet" href="assets/css/fonts.css">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
@@ -16,9 +16,9 @@
 
                 <nav>
                     <a class="nav-link active" href="#">О нас</a>
-                    <a class="nav-link" href="#">Каталог</a>
+                    <a class="nav-link" href="#">Афиша</a>
                     <a class="nav-link" href="#">Где нас найти?</a>
-                    <a class="nav-link" href="#">Вход</a>
+                    <a class="nav-link" href="#">Аутентификация</a>
                     <a class="nav-link" href="#">Регистрация</a>
                 </nav>
             </div>
