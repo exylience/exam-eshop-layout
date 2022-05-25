@@ -12,14 +12,14 @@
     <body>
         <header class="header">
             <div class="container">
-                <a class="logo" href="#">Copy Star</a>
+                <a class="logo" href="index.php">Copy Star</a>
 
                 <nav>
                     <a class="nav-link active" href="#">О нас</a>
                     <a class="nav-link" href="#">Афиша</a>
                     <a class="nav-link" href="#">Где нас найти?</a>
-                    <a class="nav-link" href="#">Аутентификация</a>
-                    <a class="nav-link" href="#">Регистрация</a>
+                    <a class="nav-link" href="login.php">Аутентификация</a>
+                    <a class="nav-link" href="register.php">Регистрация</a>
                 </nav>
             </div>
         </header>

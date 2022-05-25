@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+
+?>
+
 <!doctype html>
 <html lang="ru">
     <head>
@@ -15,11 +21,22 @@
                 <a class="logo" href="#">NeNetFlix</a>
 
                 <nav>
-                    <a class="nav-link active" href="#">О нас</a>
+                    <a class="nav-link active" href="about.php">О нас</a>
                     <a class="nav-link" href="#">Афиша</a>
                     <a class="nav-link" href="#">Где нас найти?</a>
-                    <a class="nav-link" href="#">Аутентификация</a>
-                    <a class="nav-link" href="#">Регистрация</a>
+
+                    <?php
+                        if (!isset($_SESSION['user'])) {
+                            ?>
+                                <a class="nav-link" href="login.php">Аутентификация</a>
+                                <a class="nav-link" href="register.php">Регистрация</a>
+                            <?php
+                        } else {
+                            ?>
+                                <a class="nav-link logout" href="core/auth/logout.php">Выйти</a>
+                            <?php
+                        }
+                    ?>
                 </nav>
             </div>
         </header>

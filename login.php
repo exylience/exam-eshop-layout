@@ -19,14 +19,14 @@
 
         <header class="header">
             <div class="container">
-                <a class="logo" href="#">NeNetFlix</a>
+                <a class="logo" href="index.php">NeNetFlix</a>
 
                 <nav>
-                    <a class="nav-link" href="#">О нас</a>
+                    <a class="nav-link" href="about.php">О нас</a>
                     <a class="nav-link" href="#">Афиша</a>
                     <a class="nav-link" href="#">Где нас найти?</a>
                     <a class="nav-link active" href="#">Аутентификация</a>
-                    <a class="nav-link" href="#">Регистрация</a>
+                    <a class="nav-link" href="register.php">Регистрация</a>
                 </nav>
             </div>
         </header>

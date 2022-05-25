@@ -76,6 +76,12 @@ button {
     border-radius: 3px;
 }
 
+.nav-link.logout {
+    color: #fff;
+    background-color: #d53a2c;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
 
 /**** О нас ****/
 .about-banner {
