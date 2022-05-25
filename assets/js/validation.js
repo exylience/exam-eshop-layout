@@ -1,3 +1,7 @@
+/**
+ * Валидация формы для регистрации
+ * @param e
+ */
 const validateRegisterForm = (e) => {
     e.preventDefault()
 
@@ -35,6 +39,10 @@ const validateRegisterForm = (e) => {
     }
 }
 
+/**
+ * Валидация формы для аутентификации
+ * @param e
+ */
 const validateAuthForm = (e) => {
     e.preventDefault()
 

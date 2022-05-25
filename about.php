@@ -12,7 +12,7 @@
     <body>
         <header class="header">
             <div class="container">
-                <a class="logo" href="index.php">Copy Star</a>
+                <a class="logo" href="index.php">NeNetFlix</a>
 
                 <nav>
                     <a class="nav-link active" href="#">О нас</a>
@@ -26,7 +26,7 @@
 
         <section class="about-banner">
             <div class="container">
-                <h1 class="banner-title">Copy Star</h1>
+                <h1 class="banner-title">NeNetFlix</h1>
                 <p class="banner-promo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem blanditiis soluta ut?</p>
             </div>
         </section>
@@ -34,33 +34,33 @@
         <section class="main">
             <div class="container">
                 <div class="section-top">
-                    <h3 class="section-title">Новинки компании</h3>
+                    <h3 class="section-title">Новые сеансы</h3>
                 </div>
 
                 <div class="slider">
                     <div class="slider-item">
-                        <img src="assets/img/slider-img-1.jpg" alt="#">
-                        <a class="slider-item-title" href="#">Товар 1</a>
+                        <img src="assets/img/films/gladiator.jfif" alt="#">
+                        <a class="slider-item-title" href="#">Гладиатор</a>
                     </div>
 
                     <div class="slider-item">
-                        <img src="assets/img/slider-img-2.jpg" alt="#">
-                        <a class="slider-item-title" href="#">Товар 2</a>
+                        <img src="assets/img/films/shrek.jfif" alt="#">
+                        <a class="slider-item-title" href="#">Шрек</a>
                     </div>
 
                     <div class="slider-item">
-                        <img src="assets/img/slider-img-3.jpg" alt="#">
-                        <a class="slider-item-title" href="#">Товар 3</a>
+                        <img src="assets/img/films/t5Mai3JtXcIicVJuHD.jfif" alt="#">
+                        <a class="slider-item-title" href="#">Король Лев</a>
                     </div>
 
                     <div class="slider-item">
-                        <img src="assets/img/slider-img-4.jpg" alt="#">
-                        <a class="slider-item-title" href="#">Товар 4</a>
+                        <img src="assets/img/films/t5Mai3JtXcIicVJuHDD3ioNcZR.jfif" alt="#">
+                        <a class="slider-item-title" href="#">Остров проклятых</a>
                     </div>
 
                     <div class="slider-item">
-                        <img src="assets/img/slider-img-5.jpg" alt="#">
-                        <a class="slider-item-title" href="#">Товар 5</a>
+                        <img src="assets/img/films/vVowod5cVVgupNOJbN01SPVmVO3nIecPWlbvTCc2dVZARjMpR4RVo2z.jfif" alt="#">
+                        <a class="slider-item-title" href="#">Карты, деньги, два ствола</a>
                     </div>
 
                     <div class="slider-nav">
