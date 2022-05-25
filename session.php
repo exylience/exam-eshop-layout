@@ -2,10 +2,15 @@
 session_start();
 require_once 'core/db.php';
 
-$now = date('Y-m-d H:i:s', time());
-$query = "SELECT * FROM `sessions` WHERE (DATE(`date_start`) > DATE(NOW())) ORDER BY `id` DESC";
+$id = $_GET['id'];
+
+$query = "SELECT * FROM `sessions` WHERE (`id` = '$id')";
 $response = mysqli_query($connection, $query);
-$sessions = mysqli_fetch_all($response, MYSQLI_ASSOC);
+if (mysqli_num_rows($response) === 0) {
+    header('Location: /index.php');
+} else {
+    $session = mysqli_fetch_assoc($response);
+}
 ?>
 
 <!doctype html>
@@ -53,35 +58,26 @@ $sessions = mysqli_fetch_all($response, MYSQLI_ASSOC);
         <section class="main">
             <div class="container">
                 <div class="section-top">
-                    <h3 class="section-title">Афиша</h3>
+                    <h3 class="section-title">Сеанс</h3>
                 </div>
 
-                <div class="sessions-list">
-                    <?php
-                        foreach ($sessions as $session) {
-                            ?>
-                                <a href="session.php?id=<?= $session['id'] ?>">
-                                    <div class="session">
-                                        <?php
-                                            if (isset($_SESSION['user'])) {
-                                                ?>
-                                                    <a class="session-cart-sm" href="#">В корзину</a>
-                                                <?php
-                                            }
-                                        ?>
+                <div class="sessions-full">
+                    <img class="session-photo" src="uploads/<?= $session['photo_url'] ?>" alt="#">
 
-                                        <img class="session-photo <?= !isset($_SESSION['user']) ? 'rounded' : '' ?>" src="uploads/<?= $session['photo_url'] ?>" alt="#">
+                    <div class="session-info">
+                        <h3 class="session-title"><?= $session['title'] ?></h3>
+                        <h3 class="session-date">Дата начала: <?= $session['date_start'] ?></h3>
+                        <h3 class="session-age">Возрастной ценз: <?= $session['age_rating'] ?></h3>
+                        <h3 class="session-price">Цена: <?= $session['price'] ?></h3>
 
-
-                                        <div class="session-btm">
-                                            <h3 class="session-title"><?= $session['title'] ?></h3>
-                                            <p class="session-price"><?= $session['price'] ?></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            <?php
-                        }
-                    ?>
+                        <?php
+                            if (isset($_SESSION['user'])) {
+                                ?>
+                                    <a class="session-cart" href="#">В корзину</a>
+                                <?php
+                            }
+                        ?>
+                    </div>
                 </div>
             </div>
         </section>
